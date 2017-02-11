@@ -1,7 +1,7 @@
-docker-sickrage
+docker-medusa
 ================
 
-Alpine based sickrage.  Just sickrage.  
+Alpine based medusa.  Just medusa.  
 
 Complete run command with all options
 
@@ -12,7 +12,7 @@ Complete run command with all options
         -v /mytvdir:/tv \
         -v /myblackholedir:/blackhole \
         -e PUID=500 -e PGID=500 \
-        jbogatay/sickrage
+        jbogatay/medusa
 
 
 Change directory mappings as appropriate (myconfigdir, mydownloaddir, tv, blackhole).
