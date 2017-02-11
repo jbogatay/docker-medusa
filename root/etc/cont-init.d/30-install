@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+
+# install app
+[[ ! -d "/app/sickrage/.git" ]] && \
+  git clone https://github.com/pymedusa/Medusa /app/medusa  
+
+chown -R abc:abc /app
+chown -R abc:abc /config

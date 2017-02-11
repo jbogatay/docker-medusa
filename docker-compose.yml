@@ -1,0 +1,14 @@
+medusa:
+  image: jbogatay/medusa
+  restart: unless-stopped
+  ports:
+    - "8081:8081"
+  container_name: medusa
+  environment:
+    - PUID=1001
+    - PGID=1001
+  volumes:
+    - /home/media/.config/medusa:/config
+    - /home/media/video/tv:/tv
+    - /home/media/video/in/tv:/downloads
+    - /home/media/blackhole-out/tv:/blackhole
